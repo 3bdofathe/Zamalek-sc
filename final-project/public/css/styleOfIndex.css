@@ -1,0 +1,807 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    font-size: 18px;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+.light{
+    background-color: white;
+    color: black;
+}
+
+/* style of navbar */
+
+.menu{
+    margin-left: 60px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.nav-lik{
+    margin-left: 250px;
+}
+.menu a:hover{
+    box-shadow: 5px 4px 5px 0px;
+}
+.log{
+    margin-left: 50px;
+}
+.nav-item .boot{
+    height: 50px;
+    background-color: white;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: solid red;
+    width: 120px;
+}
+.nav-item .boot:hover{
+    background-color: red;
+    color: white;
+    border: solid;
+}
+@media screen and (min-width:990px) and (max-width:1200px) {
+    .nav-lik{
+        margin-left: 0px;
+    }
+    .menu{
+        margin-left: 10px;
+        font-size: 1rem;
+    }
+    .nav-log{
+        margin-left: 20px;
+
+    }
+    .log{
+        margin-left: 20px;
+    }
+}
+@media screen and (min-width:1200px) and (max-width:1550px) {
+    .nav-lik{
+        margin-left: 150px;
+    }
+    .menu{
+        margin-left: 20px;
+        font-size: 1.3rem;
+    }
+    .nav-log{
+        margin-left: 20px;
+    }
+    .log{
+        margin-left: 20px;
+    }
+}
+
+.banner{
+    margin-top: 80px;
+ }
+
+ /* style of first section*/
+ .sec1{
+    margin-top: 80px;
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+ }
+ /* .sec1 .links div{
+    border: solid;
+ } */
+ .sec1 .links{
+    text-align: center;
+    display: flex ;
+    width: 60% ;
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: rgb(163, 162, 162);
+    justify-content: space-between;
+    height: 50px;
+    border-radius: 50px;
+ }
+ .sec1 .links .co{
+    width: 25%;
+    margin: auto;
+    height: 100%;
+    line-height: 50px;
+    border-radius: 50px;
+    background-color: rgb(163, 162, 162);
+ }
+ .sec1 .links a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+ }
+ .sec1 .links .co:hover{
+    background-color: rgb(230, 228, 228);
+ }
+
+ .sec1 .links #coo{
+    /* color: red;
+    box-shadow: 5px 4px 5px 0px; */
+    background-color: rgb(230, 228, 228);
+ }
+ @media screen and (min-width:0px) and (max-width:768px) {
+    .sec1 .links{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .sec1 .links .co{
+        width: 33.33%;
+    }
+    .sec1 .links .co a{
+        font-size: .7rem;
+    }
+}
+@media screen and (min-width:768px) and (max-width:920px) {
+    .sec1 .links{
+        width: 80%;
+        justify-content: space-around;
+    }
+    .sec1 .links .co{
+        width: 33%
+    }
+}
+@media screen and (min-width:920px) {
+    .sec1 .links{
+        width: 65%;
+        justify-content: space-around;
+    }
+    .sec1 .links .co{
+        width: 32%
+    }
+}
+/* .clothing div{
+    border: solid;
+} */
+.clothing{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    /* border: solid; */
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 50px;
+    display: none;
+}
+.clothing .coll{
+    width: 19%;
+    border: 1px solid;
+    cursor: pointer;
+    padding-bottom: 20px;
+    box-shadow: 2px 2px 3px 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.clothing .coll:hover{
+    box-shadow: 2px 2px 9px 1px;
+}
+.clothing .coll button{
+    width: 90%;
+    margin: auto;
+    height: 70px;
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.clothing .coll button:hover{
+    background-color: rgb(70, 70, 70);
+}
+@media screen and (min-width:0px) and (max-width:768px) {
+    .sec1 .clothing{
+        flex-wrap: wrap;
+        
+    }
+    .sec1 .clothing .coll{
+        width: 60%;
+        margin: auto;
+        margin-top: 15px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:920px) {
+    .sec1 .clothing{
+        flex-wrap: wrap;
+    }
+    .sec1 .clothing .coll{
+        width: 45%;
+        margin: auto;
+        margin-top: 15px;
+    }
+}
+@media screen and (min-width:920px) and (max-width:1250px) {
+    .sec1 .clothing{
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .sec1 .clothing .coll{
+        width: 32%;
+        margin: auto;
+        margin-top: 15px;
+    }
+}
+.sec1 .store{
+    width: 100%;
+    margin: auto;
+    /* border: solid; */
+    text-align: center;
+}
+.sec1 .store button{
+    width: 25%;
+    height: 80px;
+    background-color: yellow;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    border: none;
+}
+.sec1 .store button:hover{
+    opacity: .7;
+}
+@media screen and (min-width:0px) and (max-width:768px) {
+    .sec1 .store button{
+        width: 50%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1000px) {
+    .sec1 .store button{
+        width: 33%;
+    }
+}
+
+
+ /* style of second section*/
+.sec2{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sec2-img1{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    /* border: solid; */
+    /* height: 350px; */
+    margin-bottom: 50px;
+}
+.sec2-img1 .img1{
+    width: 72%;
+}
+.sec2-img1 .img2{
+    width: 25%;
+}
+@media screen and (min-width:0px) and (max-width:768px) {
+    .sec2-img1{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .sec2-img1 .img1{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .sec2-img1 .img2{
+        width: 60%;
+        margin: auto;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1000px) {
+    .sec2-img1{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .sec2-img1 .img1{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .sec2-img1 .img2{
+        width: 40%;
+        margin: auto;
+    }
+}
+
+
+.sec2-img2{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    /* border: solid; */
+    /* height: 400px; */
+}
+.sec2-img2 .img3{
+    width: 22%;
+}
+.sec2-img2 .img4{
+    width: 50%;
+}
+.sec2-img2 .img5{
+    width: 22%;
+}
+@media screen and (min-width:0px) and (max-width:768px) {
+    .sec2-img2{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .sec2-img2 .img3{
+        width: 60%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .sec2-img2 .img4{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .sec2-img2 .img5{
+        width: 60%;
+        margin: auto;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1000px) {
+    .sec2-img2{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .sec2-img2 .img3{
+        width: 40%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .sec2-img2 .img4{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .sec2-img2 .img5{
+        width: 40%;
+        margin: auto;
+    }
+}
+
+
+/* style of section three */
+.sec3{
+    display: flex;
+    width: 100%;
+    margin-top: 130px;
+    flex-direction: column;
+}
+/* .sec3 div{
+    border: solid;
+} */
+.sec3 .more{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    height: 60px;
+}
+.sec3 .more .more1{
+    width: 10%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    line-height: 60px;
+}
+.sec3 .more .more2{
+    width: 5%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: yellow;
+    border-radius: 50px;
+}
+.sec3 .more .more2 a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    border: none;
+}
+.sec3 .more .more2:hover{
+    cursor: pointer;
+    opacity: .6 ;
+}
+@media screen and (min-width:0px) and (max-width:768px) {
+    .sec3 .more .more1{
+        width: 30%;
+    }
+    .sec3 .more .more2{
+        width: 25%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .sec3 .more .more1{
+        width: 20%;
+    }
+    .sec3 .more .more2{
+        width: 16%;
+    }
+}
+@media screen and (min-width:1200px)  {
+    .sec3 .more .more1{
+        width: 13%;
+    }
+    .sec3 .more .more2{
+        width: 10%;
+    }
+}
+.sec3 .match{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.match .mach{
+    width: 24%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px;
+    padding-top: 20px;
+}
+.match .mach:hover{
+    box-shadow: 2px 2px 9px 1px;
+}
+.match .mach .mach1{
+    line-height: 10px;
+    margin-bottom: 70px;
+}
+.match .mach .mach3{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    height: 60px;
+    text-align: center;
+    background-color: black;
+    border: none;
+    padding: 10px;
+}
+.match .mach .mach3 a{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.match .mach .mach3:hover{
+    background-color: rgb(48, 47, 47);
+    cursor: pointer;
+}
+@media screen and (min-width:0px) and (max-width:700px) {
+    .sec3 .match{
+        flex-wrap: wrap;
+    }
+    .match .mach{
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+@media screen and (min-width:700px) and (max-width:920px) {
+    .sec3 .match{
+        flex-wrap: wrap;
+    }
+    .match .mach{
+        width: 47%;
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+@media screen and (min-width:920px) and (max-width:1200px) {
+    .sec3 .match{
+        flex-wrap: wrap;
+    }
+    .match .mach{
+        width: 32%;
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+
+.sec4{
+    margin-top: 70px;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+/* .sec4 div{
+    border: solid;
+} */
+.sec4 .sec{
+    width: 8%;
+}
+.sec4 .sec h3{
+    text-align: center;
+    opacity: .7;
+    margin-top: 20px;
+}
+.sec4 .sec img:hover{
+    box-shadow: 2px 2px 9px 1px;
+}
+
+@media screen and (min-width:0px) and (max-width:700px) {
+    .sec4{
+        flex-wrap: wrap;
+    }
+    .sec4 .sec{
+        width: 30%;
+        margin: auto;
+        margin-top: 15px;
+    }
+}
+@media screen and (min-width:700px) and (max-width:920px) {
+    .sec4{
+        flex-wrap: wrap;
+    }
+    .sec4 .sec{
+        width: 20%;
+        margin: auto;
+        margin-top: 15px;
+    }
+}
+
+
+/* style of section 5 */
+.sec5{
+    width: 100%;
+    margin-bottom: 70px;
+}
+/* .sec5 div{
+    border: solid;
+} */
+.sec5 .sec-txt{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+@media screen and (min-width:0px) and (max-width:700px) {
+    .sec5 .sec-txt{
+        width: 70%;
+        margin: auto;
+    }
+}
+.sec5 .sec-txt h1{
+    font-size: 40px;
+    font-weight: 900;
+}
+.sec5 .contact{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+    /* background-color: rgb(167, 167, 150); */
+}
+.sec5 .contact .cont{
+    width: 47%;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    border-radius: 20px;
+}
+.sec5 .contact .map{
+    width: 47%;
+}
+.sec5 .contact .map .us1{
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 1px;
+}
+.sec5 .contact .form form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 25px;
+    padding-left: 30px;
+}
+.sec5 .contact .form form label{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.sec5 .contact .form form input{
+    width: 80%;
+    height: 60px;
+    padding: 12px 20px;
+    border: 2px solid white;
+    font-size: 20px;
+    border-radius: 15px;
+    background: none;
+    color: white;
+}
+.sec5 .contact .form form textarea{
+    width: 80%;
+    padding: 12px 20px;
+    border: 2px solid white;
+    height: 150px;
+    font-size: 20px;
+    border-radius: 15px;
+    background: none;
+    color: white;
+}
+.sec5 .contact .form form .sub{
+    width: 40%;
+    height: 65px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.sec5 .contact .form form .sub:hover{
+    background: rgb(83, 81, 81);
+
+}
+@media screen and (min-width:0px) and (max-width:600px) {
+    .sec5 .contact{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .sec5 .contact .cont{
+        width: 95%;
+        margin: auto;
+    }
+    .sec5 .contact .map{    
+        width: 95%;
+        margin: auto;
+        margin-top: 15px;
+        height: 600px;
+    }
+}
+@media screen and (min-width:400px) and (max-width:800px) {
+    .sec5 .contact{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .sec5 .contact .cont{
+        width: 80%;
+        margin: auto;
+    }
+    .sec5 .contact .map{
+        width: 80%;
+        margin: auto;
+        margin-top: 15px;
+        height: 600px;
+    }
+}
+@media screen and (min-width:800px) and (max-width:1100px) {
+    .sec5 .contact{
+        flex-wrap: wrap;
+    }
+    .sec5 .contact .cont{
+        width: 70%;
+        margin: auto;
+    }
+    .sec5 .contact .map{
+        width: 70%;
+        margin: auto;
+        margin-top: 15px;
+        height: 600px;
+    }
+}
+
+/* style of footer section */
+.footer{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 40px;
+    padding-bottom: 40px; */
+    height: 170px;
+    background-color: rgb(158, 6, 6);
+}
+/* .footer div{
+    border: solid;
+} */
+.footer .foot1{
+    width: 27%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.footer .foot1 .foo1{
+    width: 46%;
+    padding-top: 30px;
+}
+.footer .foot1 .foo1 a{
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 600;
+    color: white;
+}
+.footer .foot1 .foo1 a:hover{
+    opacity: .8;
+    text-decoration: underline;
+}
+.footer .foot2{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 30px;
+}
+.footer .foot2 .fol1{
+    width: 90%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.footer .foot2 .fol1 h4{
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+}
+.footer .foot2 .fol2{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.footer .foot2 .fol2 .foo{
+    width: 15%;
+    font-size: 30px;
+    color: white;
+}
+.footer .foot2 .fol2 .foo i:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+.footer2{
+    height: 70px;
+    text-align: center;
+    width: 90%;
+    margin: auto
+}
+.footer2 hr{
+    border: 1.5px solid;
+    color: white;
+}
+.footer2 p{
+    color: white;
+    font-weight: bold;
+}
+.footer2 p:hover{
+    opacity: .8;
+}
+@media screen and (min-width:0px) and (max-width:700px) {
+    .footer{
+        height: 200px;
+    }
+    .footer .foot1{
+        width: 40%;
+    }
+    .footer .foot2{
+        width: 40%;
+    }
+}
+@media screen and (min-width:700px) and (max-width:990px) {
+    .footer{
+        height: 190px;
+    }
+    .footer .foot1{
+        width: 30%;
+    }
+    .footer .foot2{
+        width: 30%;
+    }
+}

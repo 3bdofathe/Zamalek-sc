@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    font-size: 18px;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+.light{
+    background-color: white;
+    color: black;
+}
+
+/* style of navbar */
+
+
+.menu{
+    margin-left: 60px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.nav-lik{
+    margin-left: 250px;
+}
+.menu a:hover{
+    box-shadow: 5px 4px 5px 0px;
+}
+.log{
+    margin-left: 50px;
+}
+.nav-item .boot{
+    height: 50px;
+    background-color: white;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: solid red;
+    width: 120px;
+}
+.nav-item .boot:hover{
+    background-color: red;
+    color: white;
+    border: solid;
+}
+@media screen and (min-width:990px) and (max-width:1200px) {
+    .nav-lik{
+        margin-left: 0px;
+    }
+    .menu{
+        margin-left: 10px;
+        font-size: 1rem;
+    }
+    .nav-log{
+        margin-left: 20px;
+
+    }
+    .log{
+        margin-left: 20px;
+    }
+}
+@media screen and (min-width:1200px) and (max-width:1550px) {
+    .nav-lik{
+        margin-left: 150px;
+    }
+    .menu{
+        margin-left: 20px;
+        font-size: 1.3rem;
+    }
+    .nav-log{
+        margin-left: 20px;
+    }
+    .log{
+        margin-left: 20px;
+    }
+}
+
+
+
+.banner{
+    margin: auto;
+    margin-top: 150px;
+    width: 80%;
+ }
+
+ /* style of the first section (products) */
+ .section1{
+    margin-top: 120px;
+    margin-bottom: 100px;
+ }
+ .shop{
+    text-align: center;
+    color: red;
+    margin-bottom: 100px;
+ }
+ .clothing{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    /* border: solid; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 50px;
+    display: none;
+}
+.clothing .coll{
+    margin-top: 30px;
+    width: 23%;
+    border: 1px solid;
+    cursor: pointer;
+    padding-bottom: 20px;
+    box-shadow: 2px 2px 3px 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.clothing .coll:hover{
+    box-shadow: 2px 2px 9px 1px;
+}
+.clothing .coll button{
+    width: 90%;
+    margin: auto;
+    height: 70px;
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.clothing .coll button:hover{
+    background-color: rgb(70, 70, 70);
+}
+@media screen and (min-width:0px) and (max-width:768px) {
+    .section1 .clothing{
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .section1 .clothing .coll{
+        width: 60%;
+        margin: auto;
+        margin-top: 15px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:920px) {
+    .section1 .clothing{
+        flex-wrap: wrap;
+    }
+    .section1 .clothing .coll{
+        width: 45%;
+        margin: auto;
+        margin-top: 15px;
+    }
+}
+@media screen and (min-width:920px) and (max-width:1250px) {
+    .section1 .clothing{
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .section1 .clothing .coll{
+        width: 32%;
+        margin: auto;
+        margin-top: 15px;
+    }
+}
+.deta{
+    margin: auto;
+    margin-top: 100px;
+    width: 85%;
+}
+.details{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.details .p1{
+    margin-top: 30px;
+}
+.details p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.feat {
+    margin-bottom: 50px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.feat h1{
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.feat ul li{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 20px;
+}
+@media screen and (min-width:0px) and (max-width:768px) {
+    .deta{
+        width: 90%;
+    }
+    .deta .details{
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    .deta .feat{
+        width: 100%;
+        font-size: 1.1rem;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .deta .details{
+        width: 85%;
+        font-size: 1.2rem;
+    }
+    .deta .feat{
+        width: 85%;
+        font-size: 1.2rem;
+    }
+}
+
+.customer{
+    margin-top: 70px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 200px;
+    background-color: rgb(226, 226, 226);
+}
+/* .customer div{
+    border: solid;
+} */
+.customer .cust{
+    width: 20%;
+    text-align: center;
+    margin: auto;
+}
+.customer .cust i{
+    font-size: 25px;
+}
+.customer .cust p{
+    font-weight: 600;
+    margin-top: 20px;
+    opacity: .7;
+}
+@media screen and (min-width:0px) and (max-width:768px) {
+    .customer .cust{
+        width: 31%;
+        font-size: .8rem;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .customer .cust{
+        width: 25%;
+        font-size: .9rem;
+    }
+}
+
+/* style of footer section */
+.footer{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 40px;
+    padding-bottom: 40px; */
+    height: 170px;
+    background-color: rgb(158, 6, 6);
+}
+/* .footer div{
+    border: solid;
+} */
+.footer .foot1{
+    width: 27%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.footer .foot1 .foo1{
+    width: 46%;
+    padding-top: 30px;
+}
+.footer .foot1 .foo1 a{
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 600;
+    color: white;
+}
+.footer .foot1 .foo1 a:hover{
+    opacity: .8;
+    text-decoration: underline;
+}
+.footer .foot2{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 30px;
+}
+.footer .foot2 .fol1{
+    width: 90%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.footer .foot2 .fol1 h4{
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+}
+.footer .foot2 .fol2{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.footer .foot2 .fol2 .foo{
+    width: 15%;
+    font-size: 30px;
+    color: white;
+}
+.footer .foot2 .fol2 .foo i:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+.footer2{
+    height: 70px;
+    text-align: center;
+    width: 90%;
+    margin: auto
+}
+.footer2 hr{
+    border: 1.5px solid;
+    color: white;
+}
+.footer2 p{
+    color: white;
+    font-weight: bold;
+}
+.footer2 p:hover{
+    opacity: .8;
+}
+@media screen and (min-width:0px) and (max-width:700px) {
+    .footer{
+        height: 200px;
+    }
+    .footer .foot1{
+        width: 40%;
+    }
+    .footer .foot2{
+        width: 40%;
+    }
+}
+@media screen and (min-width:700px) and (max-width:990px) {
+    .footer{
+        height: 190px;
+    }
+    .footer .foot1{
+        width: 30%;
+    }
+    .footer .foot2{
+        width: 30%;
+    }
+}
